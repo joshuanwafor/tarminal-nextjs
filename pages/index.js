@@ -24,52 +24,28 @@ export default function Home() {
       </Head>
 
 
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">Tarminal - POS</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Help</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <button class="btn btn-primary" type="submit">Download</button>
-              <button class="btn btn-light" type="submit">License</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+      <AppHeader />
+      <div style={{ backgroundColor: "#D8EAF0" }}>
 
-      <div className="pt-4 container" />
-      <div className="">
-        <div class="px-4 pt-5 my-5 text-center">
-          <h1 class="display-4 fw-bold">Centered screenshot</h1>
-          <div class="col-lg-6 mx-auto">
-            <p class="mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Download</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4 disabled">Use Web</button>
+        <div className="pt-4 container" />
+        <div className="">
+          <div class="px-4 pt-5 my-5 mb-0 text-center">
+            <h1 class="display-4 fw-bold">Centered screenshot</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-0">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Download</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4 disabled">Use Web</button>
+              </div>
             </div>
-          </div>
-          <div class="overflow-hidden" style={{ height: "30vh" }}>
-            <div class="container px-5">
-              <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy" />
+            <div class="overflow-hidden" style={{ height: "30vh" }}>
+              <div class="container px-5" style={{ backgroundColor: "#D8EAF0" }}>
+                <img src="bootstrap-docs.png" style={{ backgroundColor: "#D8EAF0" }} class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy" />
+              </div>
             </div>
           </div>
         </div>
+
       </div>
 
       <Features />
@@ -80,21 +56,23 @@ export default function Home() {
 
       </div>
 
-      <div className="container py-5">
-        <div className="row justify-content-center">
-          <div className="text-center col col-10">
-            <h5>
-              Want new features sooner?
-            </h5>
+      <div className="bg-light border-top" >
+        <div className="container py-5">
+          <div className="row justify-content-center align-items-center" style={{ minHeight: "65vh" }}>
+            <div className="text-center col col-10">
+              <h5>
+                Want new features sooner?
+              </h5>
 
-            <p>Get the Insiders build instead.</p>
-            <p>
-              License and Privacy Terms
-            </p>
+              <p>Get the Insiders build instead.</p>
+              <p>
+                License and Privacy Terms
+              </p>
 
-            <p>
-              By downloading and using Visual Studio Code, you agree to the license terms and privacy statement. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see How to Disable Crash Reporting to learn how to disable it.
-            </p>
+              <p>
+                By downloading and using Visual Studio Code, you agree to the license terms and privacy statement. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see How to Disable Crash Reporting to learn how to disable it.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -127,7 +105,7 @@ function Footer() {
 function Features() {
 
 
-  return <div style={{ backgroundColor: "#ECF9F5" }}><div class="container px-4 py-5" id="featured-3">
+  return <div style={{ backgroundColor: "#F0E3D8" }}><div class="container px-4 py-5" id="featured-3">
     <h2 class="pb-2">Features</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
@@ -203,4 +181,36 @@ function Downloads() {
 
     </div>
   </div>
+}
+
+
+function AppHeader() {
+  return <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tarminal - POS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Help</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-primary" type="submit">Download</button>
+          <button class="btn btn-light" type="submit">License</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 }
