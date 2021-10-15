@@ -71,8 +71,6 @@ export default function Home() {
       </div>
       </div>
 
-
-
       <Features />
 
       <div class="bg-light py-5 my-5" style={{height:"50vh"}}>
