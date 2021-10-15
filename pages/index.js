@@ -75,6 +75,10 @@ export default function Home() {
 
       <Features />
 
+      <div class="bg-light py-5 my-5" style={{height:"50vh"}}>
+
+      </div>
+
 
       <div className="container">
         <div className="row justify-content-center">
