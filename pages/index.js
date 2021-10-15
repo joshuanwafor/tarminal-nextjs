@@ -30,9 +30,9 @@ export default function Home() {
         <div className="pt-4 container" />
         <div className="">
           <div class="px-4 pt-5 my-5 mb-0 text-center">
-            <h1 class="display-4 fw-bold">Centered screenshot</h1>
+            <h1 class="display-4 fw-bold">Business management.<br/> Redefined.</h1>
             <div class="col-lg-6 mx-auto">
-              <p class="mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+              <p class="mb-4">Tarminal POS provides basica tools needed for businesses of all scale to manage customers, inventory, reports and sales offline with less hassel. We understand most businesses run their businesses offline so we've built the tarminal app to run effectively offline. No more manual tracking of inventory and reports. </p>
               <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-0">
                 <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Download</button>
                 <button type="button" class="btn btn-outline-secondary btn-lg px-4 disabled">Use Web</button>
@@ -187,7 +187,7 @@ function Downloads() {
 function AppHeader() {
   return <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Tarminal - POS</a>
+      <a class="navbar-brand fw-bold" href="#">Tarminal - POS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
